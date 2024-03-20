@@ -1,4 +1,4 @@
-function FilterInput({ handleSearchInput, handleSelectValue }) {
+function FilterInput({ handleSearchInput }) {
   const handleInput = (event) => {
     const valueInput = event.target.value;
     handleSearchInput(valueInput);
@@ -11,7 +11,7 @@ function FilterInput({ handleSearchInput, handleSelectValue }) {
         placeholder="Busca aquí un país..."
         onChange={handleInput}
       />
-      <select onChange={handleSelectValue}>
+      <select>
         <option value="all">All</option>
         <option value="africa">Africa</option>
         <option value="north_america">North America</option>

@@ -7,15 +7,10 @@ import Header from "./Header";
 
 function App() {
   const [searchValue, setSearchValue] = useState("");
-  // const [selectValue, setSelectValue] = useState(null);
 
   const handleSearchInput = (value) => {
     setSearchValue(value);
   };
-
-  // const handleSelectValue = (value) => {
-  //   setSelectValue(value);
-  // };
 
   const filterCountries = data.filter((dataFilter) => {
     return dataFilter.name.common

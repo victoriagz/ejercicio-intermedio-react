@@ -1,0 +1,21 @@
+.country-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .info {
+    margin-bottom: 10px; /* Espacio entre cada elemento dentro de la tarjeta */
+  }
+  
+  .info p {
+    margin: 0; /* Elimina el margen predeterminado de los párrafos */
+  }
+  

@@ -1,11 +1,13 @@
-import "../styles/App.scss"
+import "../styles/App.scss";
+import data from "../services/data.json";
+import ListCountries from "./ListCountries";
 
-function App (){
-
+function App() {
   return (
-<h1>hola</h1>
+    <main>
+      <ListCountries dataCountries={data} />
+    </main>
   );
 }
-
 
 export default App;

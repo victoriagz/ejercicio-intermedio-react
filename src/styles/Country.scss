@@ -1,21 +1,30 @@
+.country-container {
+  display: grid;
+  justify-content: center;
+}
+
 .country-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-  }
-  
-  .card {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-  }
-  
-  .info {
-    margin-bottom: 10px; /* Espacio entre cada elemento dentro de la tarjeta */
-  }
-  
-  .info p {
-    margin: 0; /* Elimina el margen predeterminado de los párrafos */
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.card {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+}
+
+.info {
+  margin-bottom: 10px;
+}
+
+.info p {
+  margin: 0;
+  font-size: 16px;
+}
+

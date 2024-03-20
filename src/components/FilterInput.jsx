@@ -1,7 +1,12 @@
-function FilterInput({ handleSearchInput }) {
+function FilterInput({ onChangeSearch, onChangeContinent }) {
   const handleInput = (event) => {
     const valueInput = event.target.value;
-    handleSearchInput(valueInput);
+    onChangeSearch(valueInput);
+  };
+
+  const handleChangeContinent = (event) => {
+    const valueContinent = event.target.value;
+    onChangeContinent(valueContinent);
   };
 
   return (
@@ -11,14 +16,15 @@ function FilterInput({ handleSearchInput }) {
         placeholder="Busca aquí un país..."
         onChange={handleInput}
       />
-      <select>
-        <option value="all">All</option>
-        <option value="africa">Africa</option>
-        <option value="north_america">North America</option>
-        <option value="south_america">South America</option>
-        <option value="europe">Europe</option>
-        <option value="asia">Asia</option>
-        <option value="oceania">Oceania</option>
+      <select onChange={handleChangeContinent}>
+        <option value="All">All</option>
+        <option value="Africa">Africa</option>
+        <option value="North America">North America</option>
+        <option value="South America">South America</option>
+        <option value="Europe">Europe</option>
+        <option value="Asia">Asia</option>
+        <option value="Oceania">Oceania</option>
+        <option value="Antartica">Antartica</option>
       </select>
     </div>
   );
